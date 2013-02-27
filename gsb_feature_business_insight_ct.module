@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GSB Feature Business Insight Content Type feature.
+ */
+
+include_once 'gsb_feature_business_insight_ct.features.inc';
