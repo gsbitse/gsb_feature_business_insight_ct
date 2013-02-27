@@ -196,14 +196,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_author',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -569,21 +562,23 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 1,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
         'weight' => '4',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -731,7 +726,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_business_insight_topic',
       'label' => 'Business Insight Topic',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1191,7 +1186,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_date_published',
       'label' => 'Date Published',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
@@ -1363,7 +1358,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_editorial_summary',
       'label' => 'Editorial Summary',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'linkit' => array(
           'enable' => 0,
@@ -1850,7 +1845,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'target_audience',
+            'vocabulary' => 'panopoly_categories',
             'parent' => '0',
           ),
         ),
@@ -1893,7 +1888,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_target_audience',
       'label' => 'Target Audience',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
