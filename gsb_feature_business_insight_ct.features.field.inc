@@ -908,7 +908,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '14',
+        'weight' => '18',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1133,15 +1133,15 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'cache_enabled' => 0,
         'granularity' => array(
           'day' => 'day',
-          'hour' => 'hour',
-          'minute' => 'minute',
+          'hour' => 0,
+          'minute' => 0,
           'month' => 'month',
           'second' => 0,
           'year' => 'year',
         ),
-        'timezone_db' => 'UTC',
+        'timezone_db' => '',
         'todate' => '',
-        'tz_handling' => 'site',
+        'tz_handling' => 'none',
       ),
       'translatable' => '0',
       'type' => 'datetime',
@@ -1238,7 +1238,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'academic_area',
+            'vocabulary' => 'discipline',
             'parent' => '0',
           ),
         ),
@@ -1290,7 +1290,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '10',
+        'weight' => '15',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1458,7 +1458,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '11',
+        'weight' => '16',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1626,7 +1626,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '12',
+        'weight' => '17',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1758,7 +1758,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'academic_area',
+            'vocabulary' => 'tag',
             'parent' => '0',
           ),
         ),
@@ -1813,7 +1813,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '16',
+        'weight' => '19',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1845,7 +1845,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'panopoly_categories',
+            'vocabulary' => 'target_audience',
             'parent' => '0',
           ),
         ),
@@ -1897,7 +1897,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '15',
+        'weight' => '14',
       ),
       'workbench_access_field' => 0,
     ),

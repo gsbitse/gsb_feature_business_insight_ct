@@ -22,10 +22,10 @@ function gsb_feature_business_insight_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '18',
+          'weight' => '11',
         ),
         'workbench_access' => array(
-          'weight' => '17',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
