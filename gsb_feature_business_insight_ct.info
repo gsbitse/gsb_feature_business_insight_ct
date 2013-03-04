@@ -49,6 +49,7 @@ features[field][] = node-business_insight-field_related_links
 features[field][] = node-business_insight-field_tag
 features[field][] = node-business_insight-field_target_audience
 features[field_group][] = group_taxonomy|node|business_insight|form
+features[image][] = business_insights_220x125
 features[node][] = business_insight
 features[variable][] = field_bundle_settings_node__business_insight
 features[variable][] = menu_options_business_insight
