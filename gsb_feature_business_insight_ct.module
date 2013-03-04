@@ -5,3 +5,45 @@
  */
 
 include_once 'gsb_feature_business_insight_ct.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter() for event node edit form.
+ */
+function gsb_feature_business_insight_ct_form_business_insight_node_form_alter(&$form, &$form_state) {
+
+  if (!empty($form['field_authors']['und'])) {
+
+    foreach ($form['field_authors']['und'] as $index => $data) {
+
+      if (is_integer($index)) {
+
+        $form['field_authors']['und'][$index]['field_author']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[und][' . $index . '][field_author_reference][und]"]' => array(
+              array('value' => 'UseEntityReference'),
+            ),
+          ),
+        );
+
+        $form['field_authors']['und'][$index]['field_first_name']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[und][' . $index . '][field_author_reference][und]"]' => array(
+              array('value' => 'Other'),
+            ),
+          ),
+        );
+
+        $form['field_authors']['und'][$index]['field_last_name']['#states'] = array(
+          'visible' => array(
+            ':input[name="field_authors[und][' . $index . '][field_author_reference][und]"]' => array(
+              array('value' => 'Other'),
+            ),
+          ),
+        );
+
+      }
+
+    }
+  }
+
+}
