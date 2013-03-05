@@ -10,196 +10,6 @@
 function gsb_feature_business_insight_ct_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_authors-field_attribution_image'.
-  $fields['field_collection_item-field_authors-field_attribution_image'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_attribution_image',
-      'foreign keys' => array(
-        'fid' => array(
-          'columns' => array(
-            'fid' => 'fid',
-          ),
-          'table' => 'file_managed',
-        ),
-      ),
-      'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'image',
-      'settings' => array(
-        'default_image' => 0,
-        'uri_scheme' => 'public',
-      ),
-      'translatable' => '0',
-      'type' => 'image',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_authors',
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '2',
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '6',
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_attribution_image',
-      'label' => 'Image',
-      'required' => 0,
-      'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'media',
-        'settings' => array(
-          'allowed_schemes' => array(
-            'private' => 'private',
-            'public' => 'public',
-            'vimeo' => 0,
-            'youtube' => 0,
-          ),
-          'allowed_types' => array(
-            'audio' => 0,
-            'document' => 0,
-            'image' => 'image',
-            'video' => 0,
-          ),
-          'browser_plugins' => array(
-            'gsb_media_browser--files_and_docs' => 0,
-            'gsb_media_browser--images' => 0,
-            'gsb_media_browser--videos' => 0,
-            'gsb_media_center_document' => 0,
-            'gsb_media_center_image' => 0,
-            'gsb_media_center_video' => 0,
-            'media_default--media_browser_1' => 0,
-            'media_default--media_browser_my_files' => 0,
-            'media_internet' => 0,
-            'upload' => 0,
-          ),
-          'progress_indicator' => 'throbber',
-        ),
-        'type' => 'media_generic',
-        'weight' => '5',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
-  // Exported field: 'field_collection_item-field_authors-field_attribution_image_caption'.
-  $fields['field_collection_item-field_authors-field_attribution_image_caption'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_attribution_image_caption',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_authors',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '3',
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_attribution_image_caption',
-      'label' => 'Image Caption',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
-        ),
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '6',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
   // Exported field: 'field_collection_item-field_authors-field_author'.
   $fields['field_collection_item-field_authors-field_author'] = array(
     'field_config' => array(
@@ -528,86 +338,6 @@ function gsb_feature_business_insight_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_authors-field_title_line'.
-  $fields['field_collection_item-field_authors-field_title_line'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_title_line',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_authors',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '3',
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_title_line',
-      'label' => 'Title Line',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
-        ),
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '4',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
   // Exported field: 'node-business_insight-body'.
   $fields['node-business_insight-body'] = array(
     'field_config' => array(
@@ -872,98 +602,6 @@ function gsb_feature_business_insight_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-business_insight-field_citation'.
-  $fields['node-business_insight-field_citation'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_citation',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'business_insight',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 16,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_citation',
-      'label' => 'Citation',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
-        ),
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '5',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
   // Exported field: 'node-business_insight-field_company_organization'.
   $fields['node-business_insight-field_company_organization'] = array(
     'field_config' => array(
@@ -1100,7 +738,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 5,
+          'weight' => 17,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1129,7 +767,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_content_image',
-      'label' => 'Content Image',
+      'label' => 'Header Image',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -1173,7 +811,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '7',
+        'weight' => '6',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1219,7 +857,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 15,
+          'weight' => 18,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1248,7 +886,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_content_image_caption',
-      'label' => 'Content Image Caption',
+      'label' => 'Header Image Caption',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -1265,7 +903,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '8',
+        'weight' => '7',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1295,7 +933,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'year' => 'year',
         ),
         'timezone_db' => '',
-        'todate' => '',
+        'todate' => 'optional',
         'tz_handling' => 'none',
       ),
       'translatable' => '0',
@@ -1544,10 +1182,97 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'rows' => '3',
         ),
         'type' => 'text_textarea',
         'weight' => '3',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-business_insight-field_header_image_style'.
+  $fields['node-business_insight-field_header_image_style'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_header_image_style',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => 'No Image',
+          'small-image' => 'Small Image',
+          'large-image' => 'Large Image',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'business_insight',
+      'default_value' => array(
+        0 => array(
+          'value' => '0',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 19,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_header_image_style',
+      'label' => 'Header Image Style',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1833,7 +1558,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '9',
+        'weight' => '8',
       ),
       'workbench_access_field' => 0,
     ),
@@ -2032,23 +1757,20 @@ function gsb_feature_business_insight_ct_field_default_fields() {
   t('Authors');
   t('Body');
   t('Business Insight Topic');
-  t('Citation');
   t('Company Organization');
-  t('Content Image');
-  t('Content Image Caption');
   t('Date Published');
   t('Discipline');
   t('Editorial Summary');
   t('First Name');
-  t('Image');
-  t('Image Caption');
+  t('Header Image');
+  t('Header Image Caption');
+  t('Header Image Style');
   t('Industry');
   t('Last Name');
   t('Region');
   t('Related Links');
   t('Tag');
   t('Target Audience');
-  t('Title Line');
 
   return $fields;
 }
