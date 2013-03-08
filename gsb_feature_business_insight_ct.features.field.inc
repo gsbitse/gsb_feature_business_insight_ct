@@ -933,7 +933,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'year' => 'year',
         ),
         'timezone_db' => '',
-        'todate' => 'optional',
+        'todate' => '',
         'tz_handling' => 'none',
       ),
       'translatable' => '0',
