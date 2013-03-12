@@ -21,7 +21,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '10',
+    'weight' => '9',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
