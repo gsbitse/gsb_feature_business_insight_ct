@@ -134,7 +134,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'field_authors',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => 'Other',
+        ),
+      ),
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -170,7 +174,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '0',
+        'weight' => 0,
       ),
       'workbench_access_field' => 0,
     ),
