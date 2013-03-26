@@ -390,6 +390,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -471,6 +477,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -573,6 +585,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -659,6 +677,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 12,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -751,6 +775,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 17,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -879,6 +909,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -972,6 +1008,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1085,6 +1127,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1164,6 +1212,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1264,6 +1318,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1350,6 +1410,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 8,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1446,6 +1512,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1528,6 +1600,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 6,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1643,6 +1721,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1732,6 +1816,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 13,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
