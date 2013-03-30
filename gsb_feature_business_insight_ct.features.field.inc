@@ -936,13 +936,14 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         ),
       ),
       'locked' => '0',
-      'module' => 'image',
+      'module' => 'file',
       'settings' => array(
-        'default_image' => 0,
+        'display_default' => 0,
+        'display_field' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
-      'type' => 'image',
+      'type' => 'file',
     ),
     'field_instance' => array(
       'bundle' => 'business_insight',
@@ -951,13 +952,10 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 17,
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => 21,
         ),
         'featured' => array(
           'label' => 'above',
@@ -972,14 +970,10 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '7',
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'tiny' => array(
           'label' => 'above',
@@ -993,14 +987,10 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'label' => 'Header Image',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => '',
+        'description_field' => 0,
+        'file_directory' => 'media-center',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(

@@ -24,8 +24,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'group_bi_authors',
-      1 => 'group_bi_citation',
-      2 => 'group_bi_header_image',
+      1 => 'group_bi_header_image',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -77,9 +76,9 @@ function gsb_feature_business_insight_ct_field_group_info() {
     'label' => 'Header Image',
     'weight' => '24',
     'children' => array(
-      0 => 'field_file_single_public',
-      1 => 'field_header_image_style',
-      2 => 'field_image_caption',
+      0 => 'field_header_image_style',
+      1 => 'field_image_caption',
+      2 => 'field_file_single_public',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
