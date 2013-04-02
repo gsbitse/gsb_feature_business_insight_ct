@@ -95,6 +95,79 @@ function gsb_feature_business_insight_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|business_insight|default';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'business_insight';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
+      2 => 'field_discipline',
+      3 => 'field_industry',
+      4 => 'field_region',
+      5 => 'field_tag',
+      6 => 'field_target_audience',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tags',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_tags|node|business_insight|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|business_insight|teaser';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'business_insight';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Tags:',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
+      2 => 'field_discipline',
+      3 => 'field_industry',
+      4 => 'field_region',
+      5 => 'field_tag',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tags:',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_tags|node|business_insight|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_taxonomy|node|business_insight|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';

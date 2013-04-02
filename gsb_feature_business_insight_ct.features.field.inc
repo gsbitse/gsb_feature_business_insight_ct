@@ -367,11 +367,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 20,
+          'weight' => '13',
         ),
         'featured' => array(
           'label' => 'above',
@@ -389,7 +389,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -468,11 +468,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 11,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -491,7 +491,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '6',
+          'weight' => '10',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -561,11 +561,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 12,
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -584,7 +584,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '5',
+          'weight' => '9',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -651,7 +651,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
             'format_type' => 'long',
@@ -662,7 +662,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'featured' => array(
           'label' => 'above',
@@ -688,7 +688,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => '10',
+          'weight' => '1',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -769,11 +769,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 7,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -792,7 +792,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '8',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -853,11 +853,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 3,
+          'type' => 'text_plain',
+          'weight' => '12',
         ),
         'featured' => array(
           'label' => 'above',
@@ -875,7 +875,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'text_plain',
           'weight' => '3',
         ),
         'tiny' => array(
@@ -951,11 +951,13 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'file',
-          'settings' => array(),
-          'type' => 'file_default',
-          'weight' => 21,
+          'label' => 'hidden',
+          'module' => 'file_entity',
+          'settings' => array(
+            'file_view_mode' => 'preview',
+          ),
+          'type' => 'file_rendered',
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -971,9 +973,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'module' => 'file_entity',
+          'settings' => array(
+            'file_view_mode' => 'preview',
+          ),
+          'type' => 'file_rendered',
+          'weight' => '0',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1069,11 +1074,10 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'list',
+          'label' => 'hidden',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 19,
+          'type' => 'hidden',
+          'weight' => '20',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1089,10 +1093,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => 'list',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '8',
+          'type' => 'hidden',
+          'weight' => '11',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1155,11 +1158,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 18,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1254,11 +1257,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 8,
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1277,7 +1280,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '0',
+          'weight' => '5',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1330,17 +1333,17 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'field_collection',
           'settings' => array(
-            'add' => 'Add',
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
-            'view_mode' => 'full',
+            'add' => '',
+            'delete' => '',
+            'description' => 0,
+            'edit' => '',
+            'view_mode' => 'tiny',
           ),
           'type' => 'field_collection_view',
-          'weight' => 1,
+          'weight' => '14',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1356,16 +1359,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => 'Add',
-            'delete' => 'Delete',
-            'description' => 0,
-            'edit' => 'Edit',
-            'view_mode' => 'tiny',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => '9',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '10',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1433,11 +1429,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 9,
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1456,7 +1452,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '6',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1524,11 +1520,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 14,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1547,7 +1543,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '2',
+          'weight' => '7',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1618,11 +1614,11 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
