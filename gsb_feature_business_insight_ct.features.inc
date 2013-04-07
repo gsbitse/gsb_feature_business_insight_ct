@@ -23,37 +23,6 @@ function gsb_feature_business_insight_ct_ctools_plugin_api() {
 }
 
 /**
- * Implements hook_image_default_styles().
- */
-function gsb_feature_business_insight_ct_image_default_styles() {
-  $styles = array();
-
-  // Exported image style: business_insights_220x125.
-  $styles['business_insights_220x125'] = array(
-    'name' => 'business_insights_220x125',
-    'effects' => array(
-      7 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '220',
-          'height' => '125',
-        ),
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  return $styles;
-}
-
-/**
  * Implements hook_node_info().
  */
 function gsb_feature_business_insight_ct_node_info() {

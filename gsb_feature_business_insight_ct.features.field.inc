@@ -10,165 +10,6 @@
 function gsb_feature_business_insight_ct_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_person_fac_staff_other-field_author'.
-  $fields['field_collection_item-field_person_fac_staff_other-field_author'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_author',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'gsb_person' => 'gsb_person',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => '0',
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_person_fac_staff_other',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 1,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_author',
-      'label' => 'Author',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'path' => '',
-          'size' => '60',
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => '4',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
-  // Exported field: 'field_collection_item-field_person_fac_staff_other-field_author_reference'.
-  $fields['field_collection_item-field_person_fac_staff_other-field_author_reference'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_author_reference',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'UseEntityReference' => 'Author Reference',
-          'Other' => 'Other',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_person_fac_staff_other',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 0,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_author_reference',
-      'label' => 'Author Reference',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        ),
-        'type' => 'options_buttons',
-        'weight' => '2',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
   // Exported field: 'field_collection_item-field_person_fac_staff_other-field_first_name'.
   $fields['field_collection_item-field_person_fac_staff_other-field_first_name'] = array(
     'field_config' => array(
@@ -207,7 +48,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 2,
         ),
@@ -245,7 +88,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '6',
+        'weight' => '2',
       ),
       'workbench_access_field' => 0,
     ),
@@ -289,7 +132,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 3,
         ),
@@ -327,7 +172,189 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '8',
+        'weight' => '3',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_person_fac_staff_other-field_person_fac_staff_ref'.
+  $fields['field_collection_item-field_person_fac_staff_other-field_person_fac_staff_ref'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_person_fac_staff_ref',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'views',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'view' => array(
+            'args' => array(
+              0 => 'faculty',
+              1 => 'staff',
+            ),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'gsb_people_autocomplete',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_staff_other',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'conditions' => array(),
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_person_fac_staff_ref',
+      'label' => 'Person',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'taxonomy-index' => array(
+            'status' => TRUE,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '1',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_person_fac_staff_other-field_person_or_other'.
+  $fields['field_collection_item-field_person_fac_staff_other-field_person_or_other'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_person_or_other',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'UseEntityReference' => 'Fac/Staff',
+          'Other' => 'Other',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_person_fac_staff_other',
+      'default_value' => array(
+        0 => array(
+          'value' => 'Other',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'list_default',
+          'weight' => 4,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_person_or_other',
+      'label' => 'Person Selection',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'options_buttons',
+        'weight' => '0',
       ),
       'workbench_access_field' => 0,
     ),
@@ -369,7 +396,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 20,
         ),
@@ -470,7 +499,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 11,
         ),
@@ -489,7 +520,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '6',
         ),
@@ -563,7 +596,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 12,
         ),
@@ -582,7 +617,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '5',
         ),
@@ -654,6 +691,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'label' => 'above',
           'module' => 'date',
           'settings' => array(
+            'conditions' => array(),
             'format_type' => 'long',
             'fromto' => 'both',
             'multiple_from' => '',
@@ -680,6 +718,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
+            'conditions' => array(),
             'format_type' => 'long',
             'fromto' => 'both',
             'multiple_from' => '',
@@ -771,7 +810,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 7,
         ),
@@ -790,7 +831,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '4',
         ),
@@ -855,7 +898,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 3,
         ),
@@ -874,7 +919,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '3',
         ),
@@ -953,7 +1000,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'file_default',
           'weight' => 21,
         ),
@@ -1071,7 +1120,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'list',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'list_default',
           'weight' => 19,
         ),
@@ -1090,7 +1141,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'list',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'list_default',
           'weight' => '8',
         ),
@@ -1157,7 +1210,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 18,
         ),
@@ -1256,7 +1311,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 8,
         ),
@@ -1275,7 +1332,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '0',
         ),
@@ -1334,6 +1393,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'field_collection',
           'settings' => array(
             'add' => 'Add',
+            'conditions' => array(),
             'delete' => 'Delete',
             'description' => TRUE,
             'edit' => 'Edit',
@@ -1359,6 +1419,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'field_collection',
           'settings' => array(
             'add' => 'Add',
+            'conditions' => array(),
             'delete' => 'Delete',
             'description' => 0,
             'edit' => 'Edit',
@@ -1435,7 +1496,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 9,
         ),
@@ -1454,7 +1517,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '1',
         ),
@@ -1526,7 +1591,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 14,
         ),
@@ -1545,7 +1612,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '2',
         ),
@@ -1620,7 +1689,9 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'conditions' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 13,
         ),
@@ -1672,8 +1743,6 @@ function gsb_feature_business_insight_ct_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Author');
-  t('Author Reference');
   t('Authors');
   t('Body');
   t('Business Insight Topic');
@@ -1687,6 +1756,8 @@ function gsb_feature_business_insight_ct_field_default_fields() {
   t('Header Image Style');
   t('Industry');
   t('Last Name');
+  t('Person');
+  t('Person Selection');
   t('Region');
   t('Tag');
   t('Target Audience');
