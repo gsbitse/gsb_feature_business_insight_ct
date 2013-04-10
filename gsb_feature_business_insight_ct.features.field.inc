@@ -537,7 +537,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '13',
+        'weight' => '21',
       ),
       'workbench_access_field' => 0,
     ),
@@ -632,7 +632,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '18',
+        'weight' => '26',
       ),
       'workbench_access_field' => 0,
     ),
@@ -840,7 +840,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'hs_taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_hs',
-        'weight' => '14',
+        'weight' => '22',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1340,7 +1340,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'hs_taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_hs',
-        'weight' => '15',
+        'weight' => '23',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1423,6 +1423,118 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'settings' => array(),
         'type' => 'field_collection_embed',
         'weight' => '9',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-business_insight-field_pub_case_rp_ref'.
+  $fields['node-business_insight-field_pub_case_rp_ref'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_pub_case_rp_ref',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+            'publication' => 'publication',
+            'research_paper' => 'research_paper',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'business_insight',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'conditions' => array(),
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 22,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_pub_case_rp_ref',
+      'label' => 'Associated Publication/Case Study/Research Paper',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'taxonomy-index' => array(
+            'status' => TRUE,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'maxlength_js_label' => '',
+        ),
+        'type' => 'options_buttons',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1514,7 +1626,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
         'module' => 'hs_taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_hs',
-        'weight' => '16',
+        'weight' => '24',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1609,7 +1721,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '19',
+        'weight' => '27',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1704,7 +1816,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '17',
+        'weight' => '25',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1712,6 +1824,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Associated Publication/Case Study/Research Paper');
   t('Authors');
   t('Body');
   t('Business Insight Topic');

@@ -21,7 +21,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Additional Options',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'group_bi_authors',
       1 => 'group_bi_header_image',
@@ -76,9 +76,9 @@ function gsb_feature_business_insight_ct_field_group_info() {
     'label' => 'Header Image',
     'weight' => '24',
     'children' => array(
-      0 => 'field_header_image_style',
-      1 => 'field_image_caption',
-      2 => 'field_file_single_public',
+      0 => 'field_file_single_public',
+      1 => 'field_header_image_style',
+      2 => 'field_image_caption',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -103,7 +103,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '10',
+    'weight' => '7',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
