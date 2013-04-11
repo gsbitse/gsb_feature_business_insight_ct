@@ -17,9 +17,9 @@ function gsb_feature_business_insight_ct_form_business_insight_node_form_alter(&
 
       if (is_integer($index)) {
 
-        $form['field_person_fac_staff_other']['und'][$index]['field_author']['#states'] = array(
+        $form['field_person_fac_staff_other']['und'][$index]['field_person_fac_staff_ref']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_fac_staff_ref][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
               array('value' => 'UseEntityReference'),
             ),
           ),
@@ -27,7 +27,7 @@ function gsb_feature_business_insight_ct_form_business_insight_node_form_alter(&
 
         $form['field_person_fac_staff_other']['und'][$index]['field_first_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_ref[und][' . $index . '][field_person_fac_staff_ref][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
               array('value' => 'Other'),
             ),
           ),
@@ -35,7 +35,7 @@ function gsb_feature_business_insight_ct_form_business_insight_node_form_alter(&
 
         $form['field_person_fac_staff_other']['und'][$index]['field_last_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_fac_staff_ref][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
               array('value' => 'Other'),
             ),
           ),
