@@ -11,31 +11,33 @@ include_once 'gsb_feature_business_insight_ct.features.inc';
  */
 function gsb_feature_business_insight_ct_form_business_insight_node_form_alter(&$form, &$form_state) {
 
-  if (!empty($form['field_person_fac_staff_other']['und'])) {
+  $language = $form['language']['#value'];
 
-    foreach ($form['field_person_fac_staff_other']['und'] as $index => $data) {
+  if (!empty($form['field_person_fac_staff_other'][$language])) {
+
+    foreach ($form['field_person_fac_staff_other'][$language] as $index => $data) {
 
       if (is_integer($index)) {
 
-        $form['field_person_fac_staff_other']['und'][$index]['field_person_fac_staff_ref']['#states'] = array(
+        $form['field_person_fac_staff_other'][$language][$index]['field_person_fac_staff_ref']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'UseEntityReference'),
             ),
           ),
         );
 
-        $form['field_person_fac_staff_other']['und'][$index]['field_first_name']['#states'] = array(
+        $form['field_person_fac_staff_other'][$language][$index]['field_first_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
         );
 
-        $form['field_person_fac_staff_other']['und'][$index]['field_last_name']['#states'] = array(
+        $form['field_person_fac_staff_other'][$language][$index]['field_last_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_fac_staff_other[und][' . $index . '][field_person_or_other][und]"]' => array(
+            ':input[name="field_person_fac_staff_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
