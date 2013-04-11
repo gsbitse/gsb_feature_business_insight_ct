@@ -1515,14 +1515,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_pub_case_rp_ref',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -1580,6 +1573,12 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1608,11 +1607,14 @@ function gsb_feature_business_insight_ct_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
+        'module' => 'entityreference',
         'settings' => array(
+          'match_operator' => 'CONTAINS',
           'maxlength_js_label' => '',
+          'path' => '',
+          'size' => 60,
         ),
-        'type' => 'options_buttons',
+        'type' => 'entityreference_autocomplete',
         'weight' => '5',
       ),
       'workbench_access_field' => 0,
