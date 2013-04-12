@@ -68,6 +68,7 @@ features[variable][] = menu_parent_business_insight
 features[variable][] = node_options_business_insight
 features[variable][] = node_preview_business_insight
 features[variable][] = node_submitted_business_insight
+features[variable][] = panelizer_node:business_insight_allowed_types_default
 features_exclude[taxonomy][academic_area] = academic_area
 features_exclude[taxonomy][business_insight_topic] = business_insight_topic
 features_exclude[taxonomy][company_organization] = company_organization
