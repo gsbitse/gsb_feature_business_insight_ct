@@ -167,6 +167,13 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
       'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
     ),
   );
   $export['node|business_insight|teaser'] = $ds_fieldsetting;

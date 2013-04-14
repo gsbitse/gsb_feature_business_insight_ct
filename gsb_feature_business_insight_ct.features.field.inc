@@ -977,7 +977,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
-            'trim_length' => 600,
+            'trim_length' => '115',
           ),
           'type' => 'text_trimmed',
           'weight' => '4',
@@ -1091,7 +1091,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'module' => 'file_entity',
           'settings' => array(
             'conditions' => array(),
-            'file_view_mode' => 'default',
+            'file_view_mode' => 'teaser',
           ),
           'type' => 'file_rendered',
           'weight' => '0',
@@ -1602,7 +1602,7 @@ function gsb_feature_business_insight_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'tiny' => array(
           'label' => 'above',
