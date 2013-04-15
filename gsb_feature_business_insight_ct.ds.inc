@@ -342,3 +342,21 @@ function gsb_feature_business_insight_ct_ds_layout_settings_info() {
 
   return $export;
 }
+
+/**
+ * Implements hook_ds_view_modes_info().
+ */
+function gsb_feature_business_insight_ct_ds_view_modes_info() {
+  $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'business_insight';
+  $ds_view_mode->label = 'Business Insight';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['business_insight'] = $ds_view_mode;
+
+  return $export;
+}

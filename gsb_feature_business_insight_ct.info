@@ -39,6 +39,7 @@ features[ds_layout_settings][] = field_collection_item|field_person_fac_staff_ot
 features[ds_layout_settings][] = node|business_insight|default
 features[ds_layout_settings][] = node|business_insight|megamenu
 features[ds_layout_settings][] = node|business_insight|teaser
+features[ds_view_modes][] = business_insight
 features[features_api][] = api:1
 features[field][] = field_collection_item-field_person_fac_staff_other-field_first_name
 features[field][] = field_collection_item-field_person_fac_staff_other-field_last_name
