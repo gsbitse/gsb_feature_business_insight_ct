@@ -1025,12 +1025,13 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'field_collection',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'separator' => ', ',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_fields',
+        'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 6,
       ),
       'featured' => array(

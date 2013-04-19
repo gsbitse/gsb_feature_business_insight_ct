@@ -93,6 +93,11 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_file_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_image_caption' => array(
       'formatter_settings' => array(
         'ft' => array(
