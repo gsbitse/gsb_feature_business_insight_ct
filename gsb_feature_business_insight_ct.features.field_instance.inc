@@ -517,7 +517,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'teaser',
+          'format_type' => 'medium_time',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -752,7 +752,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'teaser',
+          'file_view_mode' => 'preview',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
