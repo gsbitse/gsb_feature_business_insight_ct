@@ -102,7 +102,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Tags',
+    'label' => 'Tags:',
     'weight' => '4',
     'children' => array(
       0 => 'field_business_insight_topic',
@@ -115,9 +115,11 @@ function gsb_feature_business_insight_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'label' => 'Tags',
+      'label' => 'Tags:',
       'instance_settings' => array(
         'classes' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
       ),
       'formatter' => 'open',
     ),
