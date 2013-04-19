@@ -80,11 +80,6 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'field_date_published' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
     'field_editorial_summary' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -96,6 +91,11 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
+      ),
+    ),
+    'field_file_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
     'field_image_caption' => array(
@@ -178,6 +178,11 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
         'class' => '',
         'ft' => array(),
         'conditions' => array(),
+      ),
+    ),
+    'field_file_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );

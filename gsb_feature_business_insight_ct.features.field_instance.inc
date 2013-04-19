@@ -720,7 +720,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'preview',
+          'file_view_mode' => 'teaser',
         ),
         'type' => 'file_rendered',
         'weight' => 7,
@@ -752,7 +752,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'preview',
+          'file_view_mode' => 'teaser',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
