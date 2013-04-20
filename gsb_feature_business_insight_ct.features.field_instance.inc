@@ -684,9 +684,8 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
-          'trim_length' => 115,
         ),
-        'type' => 'text_trimmed',
+        'type' => 'text_default',
         'weight' => 4,
       ),
       'tiny' => array(
