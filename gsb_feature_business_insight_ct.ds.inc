@@ -180,7 +180,7 @@ function gsb_feature_business_insight_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'field_file_single_public' => array(
+    'field_date_published' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
@@ -330,6 +330,14 @@ function gsb_feature_business_insight_ct_ds_layout_settings_info() {
         1 => 'field_date_published',
         2 => 'title',
         3 => 'field_editorial_summary',
+        4 => 'field_business_insight_topic',
+        5 => 'field_company_organization',
+        6 => 'field_discipline',
+        7 => 'field_industry',
+        8 => 'field_region',
+        9 => 'field_target_audience',
+        10 => 'field_tag',
+        11 => 'group_tags_wrapper',
       ),
     ),
     'fields' => array(
@@ -337,6 +345,14 @@ function gsb_feature_business_insight_ct_ds_layout_settings_info() {
       'field_date_published' => 'ds_content',
       'title' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
+      'field_business_insight_topic' => 'ds_content',
+      'field_company_organization' => 'ds_content',
+      'field_discipline' => 'ds_content',
+      'field_industry' => 'ds_content',
+      'field_region' => 'ds_content',
+      'field_target_audience' => 'ds_content',
+      'field_tag' => 'ds_content',
+      'group_tags_wrapper' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

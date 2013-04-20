@@ -46,6 +46,7 @@ features[field_group][] = group_additional_options|node|business_insight|form
 features[field_group][] = group_bi_authors|node|business_insight|form
 features[field_group][] = group_bi_header_image|node|business_insight|form
 features[field_group][] = group_tags_wrapper|node|business_insight|default
+features[field_group][] = group_tags_wrapper|node|business_insight|teaser
 features[field_group][] = group_taxonomy|node|business_insight|form
 features[field_group][] = group_wrapper_image|node|business_insight|default
 features[field_group][] = group_wrapper_teaser|node|business_insight|teaser
