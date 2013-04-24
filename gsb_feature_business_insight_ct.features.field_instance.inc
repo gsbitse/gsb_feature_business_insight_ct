@@ -260,14 +260,18 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'addthis_displays',
         'settings' => array(
           'buttons_size' => 'addthis_16x16_style',
-          'conditions' => array(),
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
           'counter_orientation' => 'horizontal',
           'extra_css' => '',
-          'share_services' => 'facebook,twitter',
+          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
         ),
         'type' => 'addthis_basic_toolbox',
         'weight' => 7,
