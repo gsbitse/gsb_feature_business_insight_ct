@@ -62,7 +62,7 @@ function gsb_feature_business_insight_ct_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'hidden',
       'formatter' => 'addthis_basic_toolbox',
       'delta_limit' => 0,
       'delta_offset' => '0',
