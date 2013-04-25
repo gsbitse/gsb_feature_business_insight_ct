@@ -1401,7 +1401,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'weight' => 10,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'ds',
         'settings' => array(
           'conditions' => array(),
