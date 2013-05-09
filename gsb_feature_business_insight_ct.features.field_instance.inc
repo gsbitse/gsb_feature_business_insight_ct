@@ -872,71 +872,6 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-business_insight-field_header_image_style'
-  $field_instances['node-business_insight-field_header_image_style'] = array(
-    'bundle' => 'business_insight',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'megamenu' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_header_image_style',
-    'label' => 'Header Image Style',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-business_insight-field_image_caption'
   $field_instances['node-business_insight-field_image_caption'] = array(
     'bundle' => 'business_insight',
@@ -1452,7 +1387,6 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
   t('First Name');
   t('Header Image');
   t('Header Image Caption');
-  t('Header Image Style');
   t('Industry');
   t('Last Name');
   t('Person');

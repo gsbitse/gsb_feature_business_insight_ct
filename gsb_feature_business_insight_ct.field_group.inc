@@ -77,8 +77,7 @@ function gsb_feature_business_insight_ct_field_group_info() {
     'weight' => '24',
     'children' => array(
       0 => 'field_file_single_public',
-      1 => 'field_header_image_style',
-      2 => 'field_image_caption',
+      1 => 'field_image_caption',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
