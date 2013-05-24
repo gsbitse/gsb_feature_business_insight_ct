@@ -773,7 +773,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
   $field_instances['node-business_insight-field_file_single_public'] = array(
     'bundle' => 'business_insight',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -824,6 +824,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_file_single_public',
     'label' => 'Header Image',
@@ -862,6 +863,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 0,
+          'youtube' => 0,
         ),
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
@@ -1391,6 +1393,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
   t('Last Name');
   t('Person');
   t('Person Selection');
+  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Tag');
   t('Target Audience');
