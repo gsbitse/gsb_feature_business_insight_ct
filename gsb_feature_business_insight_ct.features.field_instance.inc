@@ -1227,6 +1227,72 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-business_insight-field_search_field'
+  $field_instances['node-business_insight-field_search_field'] = array(
+    'bundle' => 'business_insight',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 17,
+      ),
+      'megamenu' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
+        'field_addthis' => 0,
+        'field_body' => 'field_body',
+        'field_business_insight_topic' => 'field_business_insight_topic',
+        'field_company_organization' => 'field_company_organization',
+        'field_date_published' => 'field_date_published',
+        'field_discipline' => 'field_discipline',
+        'field_editorial_summary' => 'field_editorial_summary',
+        'field_file_single_public' => 0,
+        'field_image_caption' => 0,
+        'field_industry' => 'field_industry',
+        'field_person_fac_staff_other' => 'field_person_fac_staff_other',
+        'field_pub_case_rp_ref' => 0,
+        'field_region' => 'field_region',
+        'field_tag' => 'field_tag',
+        'field_target_audience' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => '',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 30,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-business_insight-field_tag'
   $field_instances['node-business_insight-field_tag'] = array(
     'bundle' => 'business_insight',
@@ -1395,6 +1461,7 @@ function gsb_feature_business_insight_ct_field_default_field_instances() {
   t('Person Selection');
   t('Recommended size for uploaded images is 600x440.');
   t('Region');
+  t('Search field');
   t('Tag');
   t('Target Audience');
 
